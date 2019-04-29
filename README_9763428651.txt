@@ -1,0 +1,20 @@
+Sina Mahbobi
+4/10/19
+EE355 PA2
+
+
+This lab involves a network of connections that have a birthday, first name, last name, phone number and email. Using the Viterbi server, one can send emails to all the emails listed in the network, however the emails must have a subject, content, and attachment in order for the emails to be sent.
+
+All the functions in the menu work as well, and the iMessage one could not be implemented. Most of the code comes from the previous lab 5, where we had to search, add, and remove connections from the network.
+
+There are zero memory leaks in the code as well, which can read in db files, and print them to the terminal, or output them to text files that you name. 
+
+All the code runs as expected. Remove function accounts for corner cases, and names that are multiple words. Search function accounts for this as well. For PA2, we must now also account for friends of connections. Each Connection has a vector of Connections, which stores friend connections in the vector. 
+
+There is also a vector of codenames for each connection, which holds the codenames of the connections that are being loaded into the program. Because of this change, the loadDB, saveDB, print connection and wrtie connection functions had to be changed. 
+
+Extra credit was also complete, all traces of connection were removed in the remove function so that the codename and Friend vectors were cleared.
+
+For this code to run, misc.cpp contact.cpp connection.cpp test_network.cpp network.cpp date.cpp need to be compiled.
+
+
